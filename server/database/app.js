@@ -102,3 +102,13 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+
+app.get('/fetchDealers', async (req, res) => {
+  try {
+    const documents = await Dealerships.find();
+    res.json(documents);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching documents' });
+  }
+});
