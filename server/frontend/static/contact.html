@@ -1,29 +1,45 @@
+```html
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us</title>
 
-    <!-- Style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
 </head>
 
 <body>
 
     <!-- Header / Navigation -->
     <header>
+
         <nav>
+
             <h1>Dealerships</h1>
 
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html" class="active">Contact Us</a>
+
+                <a href="/">Home</a>
+
+                <a href="/about">About Us</a>
+
+                <a href="/contact" class="active">Contact Us</a>
+
             </div>
+
         </nav>
+
     </header>
+
 
     <!-- Contact Us Section -->
     <main>
@@ -32,49 +48,75 @@
 
             <!-- Top Image -->
             <div class="contact-image">
-                <img src="images/cars.jpg" alt="Cars in dealership">
-                <div class="sample-text">Sample</div>
+
+                <img src="/static/cars.jpg"
+                     alt="Cars in Best Cars dealership">
+
             </div>
 
             <hr>
 
+
             <!-- Bottom Contact Section -->
             <div class="contact-content">
 
+
                 <!-- Contact Icon -->
                 <div class="contact-icon">
-                    <img src="images/contact.png" alt="Customer service">
+
+                    <img src="/static/contact.png"
+                         alt="Best Cars customer service">
+
                 </div>
+
 
                 <!-- Contact Information -->
                 <div class="contact-info">
 
                     <strong>Contact Customer Service</strong>
+
                     <br>
+
                     support@bestcars.com
 
+
                     <br><br>
+
 
                     <strong>Contact our National Advertising team</strong>
+
                     <br>
+
                     NationalSales@bestcars.com
 
+
                     <br><br>
+
 
                     <strong>Contact our Public Relations team</strong>
+
                     <br>
+
                     PR@bestcars.com
 
+
                     <br><br>
 
-                    <strong>Contact the bestcars.com offices</strong>
+
+                    <strong>Contact the Best Cars offices</strong>
+
                     <br>
+
                     312-611-1111
 
+
                     <br><br>
 
-                    <strong>Become a bestcars.com car dealer</strong>
+
+                    <strong>Become a Best Cars dealer</strong>
+
                     <br>
+
                     Visit growwithbestcars.com
 
                 </div>
@@ -86,4 +128,46 @@
     </main>
 
 </body>
+
 </html>
+```
+
+### Your `static` folder
+
+Make sure these files actually exist:
+
+```text
+static/
+│
+├── style.css
+├── bootstrap.min.css
+├── cars.jpg
+├── contact.png
+├── person1.jpg
+├── person2.jpg
+└── person3.jpg
+```
+
+The important changes from your original are:
+
+```html
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/bootstrap.min.css">
+```
+
+and:
+
+```html
+<img src="/static/cars.jpg">
+<img src="/static/contact.png">
+```
+
+instead of:
+
+```html
+<link rel="stylesheet" href="style.css">
+<img src="images/cars.jpg">
+<img src="images/contact.png">
+```
+
+This matches the **Django static-file structure** used by your capstone much bett
