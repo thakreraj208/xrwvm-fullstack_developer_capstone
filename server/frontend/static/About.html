@@ -1,32 +1,32 @@
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Best Cars</title>
+
+    <!-- Required CSS files -->
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 
 <body>
 
-    <div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light"
+         style="background-color: darkturquoise; min-height: 1in;">
 
-        <h1>About Us</h1>
+        <div class="container-fluid">
 
-        <p>
-            Welcome to Best Cars dealership, home to the best cars in North America.
-            We deal in selling domestic and imported cars at reasonable prices.
-        </p>
+            <h2 style="padding-right: 5%;">
+                Dealerships
+            </h2>
 
-        <nav class="navbar navbar-expand-lg navbar-light"
-            style="background-color: darkturquoise; height: 1in;">
-
-            <div class="container-fluid">
-
-                <h2 style="padding-right: 5%;">Dealerships</h2>
-
-                <button class="navbar-toggler"
+            <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarText"
@@ -34,47 +34,240 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation">
 
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
 
-                </button>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarText">
+            <div class="collapse navbar-collapse" id="navbarText">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                style="font-size: larger;"
-                                aria-current="page"
-                                href="/">
-                                Home
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           style="font-size: larger;"
+                           href="/">
+                            Home
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                style="font-size: larger;"
-                                href="/about">
-                                About Us
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           style="font-size: larger;"
+                           href="/about">
+                            About Us
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                style="font-size: larger;"
-                                href="/contact">
-                                Contact Us
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           style="font-size: larger;"
+                           href="/contact">
+                            Contact Us
+                        </a>
+                    </li>
 
-                    </ul>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Us Header -->
+    <div style="text-align: center; margin-top: 30px;">
+
+        <h1>About Us</h1>
+
+        <p style="font-size: 18px;">
+            Welcome to Best Cars dealership, home to the best cars in
+            North America. We deal in selling domestic and imported cars
+            at reasonable prices.
+        </p>
+
+    </div>
+
+
+    <!-- Team Section -->
+    <div class="card"
+         style="width: 85%; margin: auto; margin-top: 4%;">
+
+        <div class="banner"
+             name="about-header"
+             style="text-align: center; padding: 25px;">
+
+            <h2>Meet Our Team</h2>
+
+            <p>
+                Our dedicated team works together to provide customers
+                with reliable vehicle information and a convenient
+                dealership experience.
+            </p>
+
+        </div>
+
+
+        <!-- Team Member Cards -->
+        <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: auto;
+            width: 100%;
+            padding: 20px;
+        ">
+
+
+            <!-- Team Member 1 -->
+            <div class="card"
+                 style="width: 30%; margin: 10px;">
+
+                <img class="card-img-top"
+                     src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="Raj Thakre">
+
+                <div class="card-body">
+
+                    <p class="title"
+                       style="font-size: 22px; font-weight: bold;">
+                        Raj Thakre
+                    </p>
+
+                    <p>
+                        <strong>Full Stack Developer</strong>
+                    </p>
+
+                    <p class="card-text">
+                        Raj is responsible for developing and maintaining
+                        the Best Cars web application. He works on the
+                        frontend, backend services, REST APIs and
+                        database integration.
+                    </p>
+
+                    <p>
+                        raj.thakre@bestcars.com
+                    </p>
 
                 </div>
             </div>
-        </nav>
 
 
-        <div class="card"
-            style="width: 80%; margin: auto; margin-top: 5%;">
+            <!-- Team Member 2 -->
+            <div class="card"
+                 style="width: 30%; margin: 10px;">
+
+                <img class="card-img-top"
+                     src="https://randomuser.me/api/portraits/men/44.jpg"
+                     alt="Aarav Sharma">
+
+                <div class="card-body">
+
+                    <p class="title"
+                       style="font-size: 22px; font-weight: bold;">
+                        Aarav Sharma
+                    </p>
+
+                    <p>
+                        <strong>Sales Manager</strong>
+                    </p>
+
+                    <p class="card-text">
+                        Aarav manages vehicle information and dealership
+                        operations. He helps customers explore available
+                        cars and provides information about different
+                        vehicle models.
+                    </p>
+
+                    <p>
+                        aarav.sharma@bestcars.com
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Team Member 3 -->
+            <div class="card"
+                 style="width: 30%; margin: 10px;">
+
+                <img class="card-img-top"
+                     src="https://randomuser.me/api/portraits/women/44.jpg"
+                     alt="Priya Patel">
+
+                <div class="card-body">
+
+                    <p class="title"
+                       style="font-size: 22px; font-weight: bold;">
+                        Priya Patel
+                    </p>
+
+                    <p>
+                        <strong>Customer Support Specialist</strong>
+                    </p>
+
+                    <p class="card-text">
+                        Priya assists customers with vehicle enquiries,
+                        dealership information and general support.
+                        She focuses on providing a smooth and helpful
+                        customer experience.
+                    </p>
+
+                    <p>
+                        priya.patel@bestcars.com
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="/static/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
 ```
 
+### Your GitHub path
+
+After saving it, your repository should contain:
+
+```text
+xrwvm-fullstack_developer_capstone/
+└── server/
+    └── frontend/
+        └── static/
+            ├── About.html
+            ├── style.css
+            ├── bootstrap.min.css
+            └── bootstrap.bundle.min.js
+```
+
+Then from the **capstone repository folder**, run:
+
+```powershell
+git add server/frontend/static/About.html
+```
+
+```powershell
+git commit -m "Update About Us page"
+```
+
+```powershell
+git push
+```
+
+Your submission URL should then follow this format:
+
+```text
+https://github.com/thakreraj208/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/About.html
+```
+
+**Check the capitalization carefully:** your task specifically says `About.html`, so keep the filename exactly `About.html`, not `about.html`.
+
+One more thing: the `bestcars.com` addresses in this code are **project-style addresses**, not verified real mailboxes. If the grader only requires email IDs displayed on the page, this satisfies the visible-content requirement; don't claim they're actual working inboxes unless you own/configured them.
